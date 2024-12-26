@@ -1,0 +1,149 @@
+/* Global reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Profile section (flexbox layout) */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure content stacks vertically on smaller screens */
+    margin-top: 30px;
+}
+
+/* Profile image styling */
+#profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+/* Bio section styling */
+.bio {
+    text-align: left;
+}
+
+.bio h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+#about-me {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Button styling */
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Media Queries */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .profile {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+
+    #profile-img {
+        width: 120px; /* Smaller profile image */
+        height: 120px;
+    }
+
+    .bio h2 {
+        font-size: 1.8rem; /* Smaller heading on mobile */
+    }
+
+    #about-me {
+        font-size: 1rem; /* Smaller text on mobile */
+    }
+
+    button {
+        padding: 12px 25px; /* Larger button for easier clicking */
+        font-size: 1.1rem;
+    }
+}
+
+/* Small screens like mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Less padding on very small screens */
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Even smaller heading */
+    }
+
+    .bio h2 {
+        font-size: 1.6rem;
+    }
+
+    #profile-img {
+        width: 100px; /* Even smaller profile image */
+        height: 100px;
+    }
+
+    #about-me {
+        font-size: 0.9rem; /* Smaller text for small screens */
+    }
+
+    button {
+        padding: 10px 20px; /* Slightly smaller button */
+        font-size: 1rem;
+    }
+}
